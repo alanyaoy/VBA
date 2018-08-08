@@ -669,88 +669,386 @@ $ ls
 'Application Data'@         Downloads/   Music/                   NTUSER.DAT         NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000002.regtrans-ms   Recent@      source/         text.txt
 
 yaoa@RYDWS366 MINGW64 /c/users/yaoa
-$
+$ pwd
+/c/users/yaoa
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa
+$ ls -la
+total 28633
+drwxr-xr-x 1 yaoa 1049089        0 Aug  8 09:15  ./
+drwxr-xr-x 1 yaoa 1049089        0 Mar 20 12:12  ../
+drwxr-xr-x 1 yaoa 1049089        0 Aug  6 12:06  .atom/
+-rw-r--r-- 1 yaoa 1049089    52617 Dec 11  2017  1.txt
+drwxr-xr-x 1 yaoa 1049089        0 May 29 16:45  Alan_HD/
+drwxr-xr-x 1 yaoa 1049089        0 Sep  8  2017  AppData/
+lrwxrwxrwx 1 yaoa 1049089       29 Sep  8  2017 'Application Data' -> /c/Users/yaoa/AppData/Roaming/
+drwxr-xr-x 1 yaoa 1049089        0 Sep  8  2017  Contacts/
+lrwxrwxrwx 1 yaoa 1049089       57 Sep  8  2017  Cookies -> /c/Users/yaoa/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 yaoa 1049089        0 Aug  6 12:05  Desktop/
+drwxr-xr-x 1 yaoa 1049089        0 May 23 14:34  Documents/
+drwxr-xr-x 1 yaoa 1049089        0 Aug  6 14:31  Downloads/
+drwxr-xr-x 1 yaoa 1049089        0 Jan 15  2018  Favorites/
+drwxr-xr-x 1 yaoa 1049089        0 Jul 16 09:20  IntelGraphicsProfiles/
+drwxr-xr-x 1 yaoa 1049089        0 Aug  6 14:32  Links/
+lrwxrwxrwx 1 yaoa 1049089       27 Sep  8  2017 'Local Settings' -> /c/Users/yaoa/AppData/Local/
+drwxr-xr-x 1 yaoa 1049089        0 Sep  8  2017  Music/
+lrwxrwxrwx 1 yaoa 1049089       23 Sep  8  2017 'My Documents' -> /c/Users/yaoa/Documents/
+lrwxrwxrwx 1 yaoa 1049089       65 Sep  8  2017  NetHood -> '/c/Users/yaoa/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 yaoa 1049089        0 Aug  6 12:24  newGITTest/
+-rw-r--r-- 1 yaoa 1049089 10485760 Jul 16 09:19  NTUSER.DAT
+-rw-r--r-- 1 yaoa 1049089  8937472 Sep  8  2017  ntuser.dat.LOG1
+-rw-r--r-- 1 yaoa 1049089  5681152 Sep  8  2017  ntuser.dat.LOG2
+-rw-r--r-- 1 yaoa 1049089    65536 Sep  8  2017  NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TM.blf
+-rw-r--r-- 1 yaoa 1049089   524288 Sep  8  2017  NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 yaoa 1049089   524288 Sep  8  2017  NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000002.regtrans-ms
+-rw-r--r-- 1 yaoa 1049089       20 Sep  8  2017  ntuser.ini
+-r--r--r-- 1 yaoa 1049089     2568 Aug  2 12:02  ntuser.pol
+drwxr-xr-x 1 yaoa 1049089        0 Sep  8  2017  Pictures/
+lrwxrwxrwx 1 yaoa 1049089       65 Sep  8  2017  PrintHood -> '/c/Users/yaoa/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 yaoa 1049089       54 Sep  8  2017  Recent -> /c/Users/yaoa/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 yaoa 1049089        0 Aug 31  2017  Roaming/
+drwxr-xr-x 1 yaoa 1049089        0 Sep  8  2017 'Saved Games'/
+drwxr-xr-x 1 yaoa 1049089        0 Mar 19 11:28  Searches/
+lrwxrwxrwx 1 yaoa 1049089       54 Sep  8  2017  SendTo -> /c/Users/yaoa/AppData/Roaming/Microsoft/Windows/SendTo/
+drwxr-xr-x 1 yaoa 1049089        0 Sep 18  2017  source/
+lrwxrwxrwx 1 yaoa 1049089       58 Sep  8  2017 'Start Menu' -> '/c/Users/yaoa/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 yaoa 1049089       57 Sep  8  2017  Templates -> /c/Users/yaoa/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 yaoa 1049089        0 Sep  8  2017  Videos/
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa
+$ cd newgittest
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls -la
+total 93
+drwxr-xr-x 1 yaoa 1049089     0 Aug  6 12:24 ./
+drwxr-xr-x 1 yaoa 1049089     0 Aug  8 09:15 ../
+drwxr-xr-x 1 yaoa 1049089     0 Aug  6 13:40 .git/
+-rw-r--r-- 1 yaoa 1049089 71399 Aug  6 12:18 code.txt
+-rw-r--r-- 1 yaoa 1049089    46 Aug  6 12:18 desktop.ini
+-rw-r--r-- 1 yaoa 1049089    58 Aug  6 12:18 myfile.txt
+-rw-r--r-- 1 yaoa 1049089    57 Aug  6 12:31 myhdfile.txt
+-rw-r--r-- 1 yaoa 1049089   238 Aug  6 12:18 NotepadGit1.txt
+-rw-r--r-- 1 yaoa 1049089    71 Aug  6 12:18 README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git remote -v
+origin  https://github.com/alanyaoy/newGITTest.git (fetch)
+origin  https://github.com/alanyaoy/newGITTest.git (push)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git branch
+* master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ more myfile.txt
+bash: more: command not found
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git more myfile.txt
+git: 'more' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git show -h
+usage: git log [<options>] [<revision-range>] [[--] <path>...]
+   or: git show [<options>] <object>...
+
+    -q, --quiet           suppress diff output
+    --source              show source
+    --use-mailmap         Use mail map file
+    --decorate-refs <pattern>
+                          only decorate refs that match <pattern>
+    --decorate-refs-exclude <pattern>
+                          do not decorate refs that match <pattern>
+    --decorate[=...]      decorate options
+    -L <n,m:file>         Process line range n,m in file, counting from 1
 
 
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git show myfile.txt
+fatal: ambiguous argument 'myfile.txt': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
 
-----------------------------------------------------------------------------------------------------------
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git diff myfile.txt
+fatal: ambiguous argument 'myfile.txt': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
 
-Microsoft Windows [Version 6.3.9600]
-(c) 2013 Microsoft Corporation. All rights reserved.
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git show :myfile.txt
+fatal: Path 'myfile.txt' does not exist (neither on disk nor in the index).
 
-C:\Users\yaoa>help color
-Sets the default console foreground and background colors.
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls
+code.txt  desktop.ini  myhdfile.txt  NotepadGit1.txt  README.md
 
-COLOR [attr]
-
-  attr        Specifies color attribute of console output
-
-Color attributes are specified by TWO hex digits -- the first
-corresponds to the background; the second the foreground.  Each digit
-can be any of the following values:
-
-    0 = Black       8 = Gray
-    1 = Blue        9 = Light Blue
-    2 = Green       A = Light Green
-    3 = Aqua        B = Light Aqua
-    4 = Red         C = Light Red
-    5 = Purple      D = Light Purple
-    6 = Yellow      E = Light Yellow
-    7 = White       F = Bright White
-
-If no argument is given, this command restores the color to what it was
-when CMD.EXE started.  This value either comes from the current console
-window, the /T command line switch or from the DefaultColor registry
-value.
-
-The COLOR command sets ERRORLEVEL to 1 if an attempt is made to execute
-the COLOR command with a foreground and background color that are the
-same.
-
-Example: "COLOR fc" produces light red on bright white
-
-C:\Users\yaoa>color 02
-
-C:\Users\yaoa>color 01
-
-C:\Users\yaoa>color 03
-
-C:\Users\yaoa>git --version
-git version 2.18.0.windows.1
-
-C:\Users\yaoa>cd newgittest
-
-C:\Users\yaoa\newGITTest>type myhdfile.txt
- I am sam and I like ham.
-
-C:\Users\yaoa\newGITTest>type myhdfile.txt
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git show :myhdfile.txt
  I am sam and I like ham.
  This is my first hd Git file.
 
-C:\Users\yaoa\newGITTest>doskey /history
-help color
-color 02
-color 01
-color 03
-git --version
-cd newgittest
-type myhdfile.txt
-doskey /history
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat myhdfile.txt
+ I am sam and I like ham.
+ This is my first hd Git file.
 
-C:\Users\yaoa\newGITTest>git status
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ history
+    1  git config --help
+    2  git config -h
+    3  git config --global user.name "alanyaoy"
+    4  git config --global user.email"alanyaoy555@gmail.com"
+    5  pwd
+    6  git clone https://github.com/alanyaoy/newGITTest.git
+    7  ls
+    8  ls -la
+    9  dir
+   10  pwd
+   11  cd ..
+   12  pwd
+   13  cd ..
+   14  pwd
+   15  cd users
+   16  pwd
+   17  cd /
+   18  pwd
+   19  cd c
+   20  pwd
+   21  cd users
+   22  pwd
+   23  cd yaoa
+   24  pwd
+   25  ls -la
+   26  ls
+   27  git --version
+   28  cd newGitTest
+   29  touch myhdfile.txt
+   30  echo " I am sam and I like ham." >> myhdfile.txt
+   31  git status
+   32  git add .
+   33  git diff
+   34  git status
+   35  git commit -m "add hd.txt test file"
+   36  git status
+   37  git push
+   38  echo " This is my first hd Git file." >> myhdfile.txt
+   39  git status
+   40  git status
+   41  git diff
+   42  git add myhdfile.txt
+   43  git status
+   44  git diff
+   45  git diff --staged
+   46  git commit -m "add 2nd line to myhdfile.txt"
+   47  git push
+   48  ls
+   49  ls -la
+   50  cd ..
+   51  ls
+   52  ls -la
+   53  doskey /history
+   54  doskey /HISTORY
+   55  git reflog
+   56  git log
+   57  cd newgittest
+   58  doskey /hitory
+   59  doskey /history
+   60  git reflog
+   61  git status -s
+   62  hitory
+   63  history
+   64  ls -la
+   65  cd ..
+   66  ls -la
+   67  ls
+   68  pwd
+   69  ls -la
+   70  cd newgittest
+   71  ls -la
+   72  git remote -v
+   73  git branch
+   74  more myfile.txt
+   75  git more myfile.txt
+   76  git show -h
+   77  git show myfile.txt
+   78  git diff myfile.txt
+   79  git show :myfile.txt
+   80  ls
+   81  git show :myhdfile.txt
+   82  cat myhdfile.txt
+   83  history
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls
+code.txt  desktop.ini  f2.txt  hdfile1.txt  Notepad_f1.txt  README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls -la
+total 93
+drwxr-xr-x 1 yaoa 1049089     0 Aug  8 09:58 ./
+drwxr-xr-x 1 yaoa 1049089     0 Aug  8 10:06 ../
+drwxr-xr-x 1 yaoa 1049089     0 Aug  8 09:58 .git/
+-rw-r--r-- 1 yaoa 1049089 71399 Aug  6 12:18 code.txt
+-rw-r--r-- 1 yaoa 1049089    46 Aug  6 12:18 desktop.ini
+-rw-r--r-- 1 yaoa 1049089    16 Aug  8 09:58 f2.txt
+-rw-r--r-- 1 yaoa 1049089    57 Aug  6 12:31 hdfile1.txt
+-rw-r--r-- 1 yaoa 1049089   238 Aug  6 12:18 Notepad_f1.txt
+-rw-r--r-- 1 yaoa 1049089    71 Aug  6 12:18 README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git show :f2.txt
+ I like food .
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git cat f2.txt
+git: 'cat' is not a git command. See 'git --help'.
+
+The most similar commands are
+        clean
+        mktag
+        stage
+        stash
+        tag
+        var
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat f2.txt
+ I like food .
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls
+code.txt  desktop.ini  f2.txt  hdfile1.txt  Notepad_f1.txt  README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git mv notepad_f1.txt notepad_file1.txt
+fatal: not under version control, source=notepad_f1.txt, destination=notepad_file1.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
 On branch master
 Your branch is up to date with 'origin/master'.
 
 nothing to commit, working tree clean
 
-C:\Users\yaoa\newGITTest>color 05
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git mv Notepad_f1.txt Notepad_file1.txt
 
-C:\Users\yaoa\newGITTest>cd ..
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls
+code.txt  desktop.ini  f2.txt  hdfile1.txt  Notepad_file1.txt  README.md
 
-C:\Users\yaoa>ipconfig /all >network_info.txt
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .
 
-C:\Users\yaoa>mycommand.exe >file.txt
-'mycommand.exe' is not recognized as an internal or external command,
-operable program or batch file.
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
 
-C:\Users\yaoa>
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    Notepad_f1.txt -> Notepad_file1.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m "rename Notepad_f1.txt to Notepad_file1.txt"
+[master 1e81422] rename Notepad_f1.txt to Notepad_file1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Notepad_f1.txt => Notepad_file1.txt (100%)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 261 bytes | 261.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   d70d6e3..1e81422  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git ls
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+        lfs
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls
+code.txt  desktop.ini  f2.txt  hdfile1.txt  Notepad_file1.txt  README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git mv notepad_file1.txt Notepad_File1.txt
+fatal: not under version control, source=notepad_file1.txt, destination=Notepad_File1.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git mv Notepad_file1.txt Notepad_File1.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls
+code.txt  desktop.ini  f2.txt  hdfile1.txt  Notepad_File1.txt  README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls
+code.txt  desktop.ini  f2.txt  hdfile1.txt  Notepad_File1.txt  README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    Notepad_file1.txt -> Notepad_File1.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m "rename Notepad_file1.txt to Notepad_File1.txt - note Git is CASE sensitive"
+[master a6e7ed1] rename Notepad_file1.txt to Notepad_File1.txt - note Git is CASE sensitive
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Notepad_file1.txt => Notepad_File1.txt (100%)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 283 bytes | 283.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   1e81422..a6e7ed1  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls
+cmd.txt  code.txt  desktop.ini  f2.txt  hdfile1.txt  Notepad_File1.txt  README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls -la
+total 97
+drwxr-xr-x 1 yaoa 1049089     0 Aug  8 10:56 ./
+drwxr-xr-x 1 yaoa 1049089     0 Aug  8 10:06 ../
+drwxr-xr-x 1 yaoa 1049089     0 Aug  8 10:59 .git/
+-rw-r--r-- 1 yaoa 1049089   926 Aug  8 10:56 cmd.txt
+-rw-r--r-- 1 yaoa 1049089 71399 Aug  6 12:18 code.txt
+-rw-r--r-- 1 yaoa 1049089    46 Aug  6 12:18 desktop.ini
+-rw-r--r-- 1 yaoa 1049089    16 Aug  8 09:58 f2.txt
+-rw-r--r-- 1 yaoa 1049089    57 Aug  6 12:31 hdfile1.txt
+-rw-r--r-- 1 yaoa 1049089   238 Aug  6 12:18 Notepad_File1.txt
+-rw-r--r-- 1 yaoa 1049089    71 Aug  6 12:18 README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git rm
