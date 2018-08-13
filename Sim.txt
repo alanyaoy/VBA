@@ -1,4 +1,4 @@
- --- New MI Code --> [JDE_DB_Alan].[sp_MI_2_Raw_Combine_Mismatch] --- 7/8/2018 ---
+    --- New MI Code --> [JDE_DB_Alan].[sp_MI_2_Raw_Combine_Mismatch] --- 7/8/2018 ---
 			---first sumarize PO by month --- 
 			with po as (
 						 select tb.ItemNumber,tb.DataType1,tb.PODate_,tb.poyr,tb.pomth,tb.BuyerName,tb.BuyerNumber,tb.TransactionOriginator,tb.TransactionOrigName,tb.SupplierName
@@ -94,8 +94,8 @@
 						  from fc f left join po p on f.ItemNumber_f = p.ItemNumber and f.FcDate_f = p.PODate_
 												left join JDE_DB_Alan.vw_Mast m on f.ItemNumber_f  = m.ItemNumber and f.FCDate_f = m.SOHDate   -- SOHDate is current month name,also note 'vw_Mast' is clearn without duplicated records
 												  --left join JDE_DB_Alan.vw_Mast m on f.ItemNumber_f  = m.ItemNumber
-						 where f.Date_f< @dt							--- be careful if you have null value resulting from pervious step in join -- you will miss value --- 20/7/2018
-						-- where f.FcDate_f < '2019-03-02'
+						-- where f.Date_f< @dt							--- be careful if you have null value resulting from pervious step in join -- you will miss value --- 20/7/2018
+						 where f.FcDate_f < '2019-03-02'
 							  -- and f.ItemNumber in ('45.103.000')
 									 )
 								 						
@@ -298,6 +298,7 @@
 			   --- Need to Pivot data to display in Horizontal way --- Need to think it to join Calendar table ( with integer t number ) rather using [201808],[201809] instead using [1],[2] to speed up execution time,also to avoid hard coding !
 			   ---=====================================================================================================================================	
 			   ,_fcst as ( select f.ItemNumber_f,f.Description,f.d1,f.d3,f.d2,f.Value
+								  ,f.DataType,f.Stk_Out_Stauts,f.Owner_,f.PrimarySupplier,f.Leadtime_Mth,f.PlannerNumber
 								,c.*																				--- join cal to get YY value which is your month rank/order
 				    
 						from fcst f left join MthCal c on f.d3 = c.StartDt												--- no need to cross join cal table as FC tb always has data in 24 mth				
@@ -317,6 +318,11 @@
                -- select * from _fcst f where f.ItemNumber_f is null
 
 			   -- select * from fcst_ f order by f.ItemNumber_f					-- Testing --> this is good testing point
+
+		    select f.ItemNumber_f,f.d1,f.d2,f.DataType,f.value,f.Stk_Out_Stauts,f.Owner_,f.PrimarySupplier,f.Leadtime_Mth,f.PlannerNumber
+			from fcst_ f
+			order by f.ItemNumber_f
+
 			  ,mypvt as 
 					( select *
 						 from 

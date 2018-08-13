@@ -1051,4 +1051,1467 @@ drwxr-xr-x 1 yaoa 1049089     0 Aug  8 10:59 .git/
 -rw-r--r-- 1 yaoa 1049089    71 Aug  6 12:18 README.md
 
 yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
-$ git rm
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        cmd.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   cmd.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git reset cmd.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        cmd.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls -la
+total 97
+drwxr-xr-x 1 yaoa 1049089     0 Aug  8 10:56 ./
+drwxr-xr-x 1 yaoa 1049089     0 Aug  8 11:52 ../
+drwxr-xr-x 1 yaoa 1049089     0 Aug  8 12:05 .git/
+-rw-r--r-- 1 yaoa 1049089   926 Aug  8 10:56 cmd.txt
+-rw-r--r-- 1 yaoa 1049089 71399 Aug  6 12:18 code.txt
+-rw-r--r-- 1 yaoa 1049089    46 Aug  6 12:18 desktop.ini
+-rw-r--r-- 1 yaoa 1049089    16 Aug  8 09:58 f2.txt
+-rw-r--r-- 1 yaoa 1049089    57 Aug  6 12:31 hdfile1.txt
+-rw-r--r-- 1 yaoa 1049089   238 Aug  6 12:18 Notepad_File1.txt
+-rw-r--r-- 1 yaoa 1049089    71 Aug  6 12:18 README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git remote -v
+origin  https://github.com/alanyaoy/newGITTest.git (fetch)
+origin  https://github.com/alanyaoy/newGITTest.git (push)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git diff
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git diff
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        cmd.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        cmd.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git diff
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls
+cmd.txt  code.txt  desktop.ini  f2.txt  hdfile1.txt  Notepad_File1.txt  README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls -la
+total 97
+drwxr-xr-x 1 yaoa 1049089     0 Aug  8 10:56 ./
+drwxr-xr-x 1 yaoa 1049089     0 Aug  8 11:52 ../
+drwxr-xr-x 1 yaoa 1049089     0 Aug  9 09:10 .git/
+-rw-r--r-- 1 yaoa 1049089   926 Aug  8 10:56 cmd.txt
+-rw-r--r-- 1 yaoa 1049089 71399 Aug  6 12:18 code.txt
+-rw-r--r-- 1 yaoa 1049089    46 Aug  6 12:18 desktop.ini
+-rw-r--r-- 1 yaoa 1049089    16 Aug  8 09:58 f2.txt
+-rw-r--r-- 1 yaoa 1049089    57 Aug  6 12:31 hdfile1.txt
+-rw-r--r-- 1 yaoa 1049089   238 Aug  6 12:18 Notepad_File1.txt
+-rw-r--r-- 1 yaoa 1049089    71 Aug  6 12:18 README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat f2.txt
+ I like food .
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat hdfile1.txt
+ I am sam and I like ham.
+ This is my first hd Git file.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   hdfile1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        cmd.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git diff
+warning: LF will be replaced by CRLF in hdfile1.txt.
+The file will have its original line endings in your working directory.
+diff --git a/hdfile1.txt b/hdfile1.txt
+index 4da760b..a17aae3 100644
+--- a/hdfile1.txt
++++ b/hdfile1.txt
+@@ -1,2 +1,2 @@
+  I am sam and I like ham.
+- This is my first hd Git file.
++ This is my first hunter douglas Git file.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add hdfile1.txt
+warning: LF will be replaced by CRLF in hdfile1.txt.
+The file will have its original line endings in your working directory.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commmit -m "change hdfile1.txt from hd --> hunter douglas"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m "chage hdfile1.txt from hd --> hunter douglas"
+[master 5717feb] chage hdfile1.txt from hd --> hunter douglas
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        cmd.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+To https://github.com/alanyaoy/newGITTest.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/alanyaoy/newGITTest.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git pull
+remote: Counting objects: 21, done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 21 (delta 9), reused 19 (delta 7), pack-reused 0
+Unpacking objects: 100% (21/21), done.
+From https://github.com/alanyaoy/newGITTest
+   a6e7ed1..64be938  master     -> origin/master
+Auto-merging hdfile1.txt
+CONFLICT (content): Merge conflict in hdfile1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ git push
+To https://github.com/alanyaoy/newGITTest.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/alanyaoy/newGITTest.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ git pull
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ git commit
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       hdfile1.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ git merge
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ git add hdfile1.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 7 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        new file:   .gitignore
+        new file:   Git_History_Between_Home_HD.xlsx
+        modified:   f2.txt
+        modified:   hdfile1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        cmd.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ ls -la
+total 2070
+drwxr-xr-x 1 yaoa 1049089       0 Aug  9 09:42 ./
+drwxr-xr-x 1 yaoa 1049089       0 Aug  8 11:52 ../
+drwxr-xr-x 1 yaoa 1049089       0 Aug  9 09:49 .git/
+-rw-r--r-- 1 yaoa 1049089      23 Aug  9 09:42 .gitignore
+-rw-r--r-- 1 yaoa 1049089     926 Aug  8 10:56 cmd.txt
+-rw-r--r-- 1 yaoa 1049089   71399 Aug  6 12:18 code.txt
+-rw-r--r-- 1 yaoa 1049089      46 Aug  6 12:18 desktop.ini
+-rw-r--r-- 1 yaoa 1049089      19 Aug  9 09:42 f2.txt
+-rw-r--r-- 1 yaoa 1049089 2017926 Aug  9 09:42 Git_History_Between_Home_HD.xlsx
+-rw-r--r-- 1 yaoa 1049089     217 Aug  9 09:42 hdfile1.txt
+-rw-r--r-- 1 yaoa 1049089     238 Aug  6 12:18 Notepad_File1.txt
+-rw-r--r-- 1 yaoa 1049089      71 Aug  6 12:18 README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ echo "cmd.txt" >> .gitignore
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ ls -la
+total 2070
+drwxr-xr-x 1 yaoa 1049089       0 Aug  9 09:42 ./
+drwxr-xr-x 1 yaoa 1049089       0 Aug  8 11:52 ../
+drwxr-xr-x 1 yaoa 1049089       0 Aug  9 09:49 .git/
+-rw-r--r-- 1 yaoa 1049089      31 Aug  9 09:50 .gitignore
+-rw-r--r-- 1 yaoa 1049089     926 Aug  8 10:56 cmd.txt
+-rw-r--r-- 1 yaoa 1049089   71399 Aug  6 12:18 code.txt
+-rw-r--r-- 1 yaoa 1049089      46 Aug  6 12:18 desktop.ini
+-rw-r--r-- 1 yaoa 1049089      19 Aug  9 09:42 f2.txt
+-rw-r--r-- 1 yaoa 1049089 2017926 Aug  9 09:42 Git_History_Between_Home_HD.xlsx
+-rw-r--r-- 1 yaoa 1049089     217 Aug  9 09:42 hdfile1.txt
+-rw-r--r-- 1 yaoa 1049089     238 Aug  6 12:18 Notepad_File1.txt
+-rw-r--r-- 1 yaoa 1049089      71 Aug  6 12:18 README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ type .gitignore
+bash: type: .gitignore: not found
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ show : .gitignore
+bash: show: command not found
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ cat .gitignore
+secret.txt
+*.c
+f2.txtcmd.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ show :.gitignore
+bash: show: command not found
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ git show :.gitignore
+secret.txt
+*.c
+f2.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 7 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        new file:   .gitignore
+        new file:   Git_History_Between_Home_HD.xlsx
+        modified:   f2.txt
+        modified:   hdfile1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master|MERGING)
+$ git commit -m "modified f2.txt,hdfile1.txt,updated .gitignore,update Git_History_Between_Home_HD"
+[master 6243abc] modified f2.txt,hdfile1.txt,updated .gitignore,update Git_History_Between_Home_HD
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 873 bytes | 873.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/alanyaoy/newGITTest.git
+   64be938..6243abc  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git pull
+Already up to date.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls
+cmd.txt  code.txt  desktop.ini  f2.txt  Git_History_Between_Home_HD.xlsx  hdfile1.txt  Notepad_File1.txt  README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git mv desktop.ini Desktop.ini
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls
+cmd.txt  code.txt  Desktop.ini  f2.txt  Git_History_Between_Home_HD.xlsx  hdfile1.txt  Notepad_File1.txt  README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    desktop.ini -> Desktop.ini
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m "rename desktop.ini as Uppercase to Desktop.ini 40:47AM 09/8/18"
+[master 2925d96] rename desktop.ini as Uppercase to Desktop.ini 40:47AM 09/8/18
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename desktop.ini => Desktop.ini (100%)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 272 bytes | 272.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   6243abc..2925d96  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls -la
+total 2070
+drwxr-xr-x 1 yaoa 1049089       0 Aug  9 10:46 ./
+drwxr-xr-x 1 yaoa 1049089       0 Aug  8 11:52 ../
+drwxr-xr-x 1 yaoa 1049089       0 Aug  9 10:47 .git/
+-rw-r--r-- 1 yaoa 1049089      35 Aug  9 09:54 .gitignore
+-rw-r--r-- 1 yaoa 1049089     926 Aug  8 10:56 cmd.txt
+-rw-r--r-- 1 yaoa 1049089   71399 Aug  6 12:18 code.txt
+-rw-r--r-- 1 yaoa 1049089      46 Aug  6 12:18 Desktop.ini
+-rw-r--r-- 1 yaoa 1049089      19 Aug  9 09:42 f2.txt
+-rw-r--r-- 1 yaoa 1049089 2017926 Aug  9 09:42 Git_History_Between_Home_HD.xlsx
+-rw-r--r-- 1 yaoa 1049089     217 Aug  9 09:42 hdfile1.txt
+-rw-r--r-- 1 yaoa 1049089     238 Aug  6 12:18 Notepad_File1.txt
+-rw-r--r-- 1 yaoa 1049089      71 Aug  6 12:18 README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git mv f2.txt F2.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git mv hdfile1.txt hd1.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git mv code.txt Code.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls -la
+total 2070
+drwxr-xr-x 1 yaoa 1049089       0 Aug  9 10:49 ./
+drwxr-xr-x 1 yaoa 1049089       0 Aug  8 11:52 ../
+drwxr-xr-x 1 yaoa 1049089       0 Aug  9 10:49 .git/
+-rw-r--r-- 1 yaoa 1049089      35 Aug  9 09:54 .gitignore
+-rw-r--r-- 1 yaoa 1049089     926 Aug  8 10:56 cmd.txt
+-rw-r--r-- 1 yaoa 1049089   71399 Aug  6 12:18 Code.txt
+-rw-r--r-- 1 yaoa 1049089      46 Aug  6 12:18 Desktop.ini
+-rw-r--r-- 1 yaoa 1049089      19 Aug  9 09:42 F2.txt
+-rw-r--r-- 1 yaoa 1049089 2017926 Aug  9 09:42 Git_History_Between_Home_HD.xlsx
+-rw-r--r-- 1 yaoa 1049089     217 Aug  9 09:42 hd1.txt
+-rw-r--r-- 1 yaoa 1049089     238 Aug  6 12:18 Notepad_File1.txt
+-rw-r--r-- 1 yaoa 1049089      71 Aug  6 12:18 README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m "Update file name - Upper case "
+[master 3278577] Update file name - Upper case
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ rename code.txt => Code.txt (100%)
+ rename f2.txt => F2.txt (100%)
+ rename hdfile1.txt => hd1.txt (100%)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 260 bytes | 260.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   2925d96..3278577  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat .gitignore
+secret.txt
+*.c
+f2.txt
+cmd.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git show :.gitignore
+secret.txt
+*.c
+f2.txt
+cmd.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status\
+>
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit
+[master dd07587] ok
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 294 bytes | 294.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   3278577..dd07587  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ type F2.txt
+bash: type: F2.txt: not found
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat .F2.txt
+cat: .F2.txt: No such file or directory
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat F2.txt
+ I like food aha.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   F2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git rm --cached F2.txt
+rm 'F2.txt'
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .gitignore
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m "Update .gitignore - Add F2.txt - this is tricky as F2.txt was added to .gitignore After committed"
+[master 41144a9] Update .gitignore - Add F2.txt - this is tricky as F2.txt was added to .gitignore After committed
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 F2.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 277 bytes | 277.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   dd07587..41144a9  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat F2.txt
+ I like food aha. And Banana.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ echo "And Apple" >> F2.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat F2.txt
+ I like food aha. And Banana.
+And Apple
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ echo "And Orange" >> F2.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat F2.txt
+ I like food aha. And Banana.
+And Apple
+And Orange
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ echo "And grape" >> F2.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat F2.txt
+ I like food aha. And Banana.
+And Apple
+And Orange .
+And grape
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat F2.txt
+ I like food aha. And Banana. And Kiwi fruit.
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        F2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git diff
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+diff --git a/.gitignore b/.gitignore
+index dd02ad3..24b3599 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,5 +1,5 @@
+ secret.txt
+ *.c
+-F2.txt
++
+ Cmd.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add F2.txt
+warning: LF will be replaced by CRLF in F2.txt.
+The file will have its original line endings in your working directory.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git diff
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+diff --git a/.gitignore b/.gitignore
+index dd02ad3..24b3599 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,5 +1,5 @@
+ secret.txt
+ *.c
+-F2.txt
++
+ Cmd.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .gitignore
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .gitignore
+        new file:   F2.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git rest F2.txt
+git: 'rest' is not a git command. See 'git --help'.
+
+The most similar command is
+        reset
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .gitignore
+        new file:   F2.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git reset F2.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        F2.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m "temporarily lift F2.txt from .gitignore 11:07AM 8/8/18"
+[master faf9c57] temporarily lift F2.txt from .gitignore 11:07AM 8/8/18
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 328 bytes | 328.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   41144a9..faf9c57  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git diff
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        F2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add F2.txt
+warning: LF will be replaced by CRLF in F2.txt.
+The file will have its original line endings in your working directory.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git diff
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   F2.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m "revive F2.txt"
+[master c7227de] revive F2.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 F2.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   faf9c57..c7227de  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ echo "And lolly" >> F2.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat F2.txt
+ I like food aha. And Banana. And Kiwi fruit.
+
+And lolly
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   F2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git diff
+warning: LF will be replaced by CRLF in F2.txt.
+The file will have its original line endings in your working directory.
+diff --git a/F2.txt b/F2.txt
+index 978a2da..70ba154 100644
+--- a/F2.txt
++++ b/F2.txt
+@@ -1,2 +1,3 @@
+  I like food aha. And Banana. And Kiwi fruit.
+
++And lolly
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git diff
+warning: LF will be replaced by CRLF in F2.txt.
+The file will have its original line endings in your working directory.
+diff --git a/F2.txt b/F2.txt
+index 978a2da..ee0fd80 100644
+--- a/F2.txt
++++ b/F2.txt
+@@ -1,2 +1,3 @@
+- I like food aha. And Banana. And Kiwi fruit.
++ I like food aha. And Banana. And Kiwi-fruit.
+
++And lolly
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat .gitignore
+secret.txt
+*.c
+
+Cmd.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ echo "F2.txt" >> .gitignore
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat .gitignore
+secret.txt
+*.c
+
+Cmd.txt
+
+F2.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git rm --cached F2.txt
+rm 'F2.txt'
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    F2.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .gitignore
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .gitignore
+        deleted:    F2.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m "scale back .gitignore put F2.txt back to ignore file 9/8/18 11:15AM"
+[master 548227e] scale back .gitignore put F2.txt back to ignore file 9/8/18 11:15AM
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+ delete mode 100644 F2.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 344 bytes | 344.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   c7227de..548227e  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git mv hd1.txt HD1.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m "upper case hd1.txt"
+[master a7fc464] upper case hd1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename hd1.txt => HD1.txt (100%)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 259 bytes | 259.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   548227e..a7fc464  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls
+cmd.txt  Code.txt  Desktop.ini  F2.txt  Git_History_Between_Home_HD.xlsx  HD1.txt  Notepad_File1.txt  README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git mv cmd.txt Cmd.txt
+fatal: not under version control, source=cmd.txt, destination=Cmd.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        cmd.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .gitignore
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        cmd.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit " part of process to update case for cmd.txt to Cmd.txt"
+error: pathspec ' part of process to update case for cmd.txt to Cmd.txt' did not match any file(s) known to git.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m" part of process to update case for cmd.txt to Cmd.txt"
+[master 9146e71]  part of process to update case for cmd.txt to Cmd.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 321 bytes | 321.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   a7fc464..9146e71  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        cmd.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git mv cmd.txt Cmd.txt
+fatal: not under version control, source=cmd.txt, destination=Cmd.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   cmd.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git mv cmd.txt Cmd.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m"update cmd.txt to Cmd.txt"
+[master 65cf0d9] update cmd.txt to Cmd.txt
+ 1 file changed, 50 insertions(+)
+ create mode 100644 Cmd.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 610 bytes | 610.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   9146e71..65cf0d9  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git rm --cached Cmd.txt
+rm 'Cmd.txt'
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    Cmd.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Cmd.txt
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat .gitignore
+secret.txt
+*.c
+
+
+
+F2.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ echo "Cmd.txt" >>.gitignore
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat .gitignore
+secret.txt
+*.c
+
+
+
+F2.txt
+Cmd.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    Cmd.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls -la
+total 2070
+drwxr-xr-x 1 yaoa 1049089       0 Aug  9 12:08 ./
+drwxr-xr-x 1 yaoa 1049089       0 Aug  8 11:52 ../
+drwxr-xr-x 1 yaoa 1049089       0 Aug  9 12:11 .git/
+-rw-r--r-- 1 yaoa 1049089      37 Aug  9 12:11 .gitignore
+-rw-r--r-- 1 yaoa 1049089     926 Aug  8 10:56 Cmd.txt
+-rw-r--r-- 1 yaoa 1049089   71399 Aug  6 12:18 Code.txt
+-rw-r--r-- 1 yaoa 1049089      46 Aug  6 12:18 Desktop.ini
+-rw-r--r-- 1 yaoa 1049089      58 Aug  9 11:11 F2.txt
+-rw-r--r-- 1 yaoa 1049089 2017926 Aug  9 09:42 Git_History_Between_Home_HD.xlsx
+-rw-r--r-- 1 yaoa 1049089     217 Aug  9 09:42 HD1.txt
+-rw-r--r-- 1 yaoa 1049089     238 Aug  6 12:18 Notepad_File1.txt
+-rw-r--r-- 1 yaoa 1049089      71 Aug  6 12:18 README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git commit -m "put back Cmd.txt to ignore area"
+[master 7337f0b] put back Cmd.txt to ignore area
+ 2 files changed, 1 insertion(+), 50 deletions(-)
+ delete mode 100644 Cmd.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 314 bytes | 314.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/alanyaoy/newGITTest.git
+   65cf0d9..7337f0b  master -> master
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ls -la
+total 2070
+drwxr-xr-x 1 yaoa 1049089       0 Aug  9 12:08 ./
+drwxr-xr-x 1 yaoa 1049089       0 Aug  8 11:52 ../
+drwxr-xr-x 1 yaoa 1049089       0 Aug  9 12:13 .git/
+-rw-r--r-- 1 yaoa 1049089      37 Aug  9 12:11 .gitignore
+-rw-r--r-- 1 yaoa 1049089     926 Aug  8 10:56 Cmd.txt
+-rw-r--r-- 1 yaoa 1049089   71399 Aug  6 12:18 Code.txt
+-rw-r--r-- 1 yaoa 1049089      46 Aug  6 12:18 Desktop.ini
+-rw-r--r-- 1 yaoa 1049089      58 Aug  9 11:11 F2.txt
+-rw-r--r-- 1 yaoa 1049089 2017926 Aug  9 09:42 Git_History_Between_Home_HD.xlsx
+-rw-r--r-- 1 yaoa 1049089     217 Aug  9 09:42 HD1.txt
+-rw-r--r-- 1 yaoa 1049089     238 Aug  6 12:18 Notepad_File1.txt
+-rw-r--r-- 1 yaoa 1049089      71 Aug  6 12:18 README.md
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ echo "--------------------------" >> Cmd.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat Cmd.txt
+git commit -m "rename NotepadGit1.txt to Notepad_f1.txt,myhdfile.txt to hdfile1.txt, delete file myfile.txt"
+git cofig --global uer.name "alanyaoy"
+git config --global uer.name "alanyaoy"
+git config --global user.email "alanyaoy555@gmail.com"
+git push
+git pull
+git push
+mode 80,100
+mode 120,70
+history
+doskey /history
+ls -la
+color help
+doskey /history >cmd.txt
+color 03
+color 02
+dir -all
+dir
+del test.tx
+del test.txt
+del text.txt
+file.txt
+del file.txt
+1.txt
+del .gitconfig
+del network_info.txt
+cd ..
+cd yaoa
+cd newgittest
+ls -la
+ls
+type notepadgit2.txt
+type notepadgit1.txt
+type myfile.txt
+git status
+git rm myfile.txt
+ls -la
+type code.txt
+type myhdfile.txt
+ls
+git mv notpadgit1.txt notepad_f1.txt
+git mv notepadgit1 notepad_f1.txt
+git mv NotepadGit1 notepad_f1.txt
+git mv NotepadGit1.txt Notepad_f1.txt
+ls
+git mv myhdfile.txt hdfile1.txt
+git status
+git add .
+ls
+git status
+--------------------------
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ echo "09/08/2018 15:15PM" >> Cmd.txt
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ cat cmd.txt
+git commit -m "rename NotepadGit1.txt to Notepad_f1.txt,myhdfile.txt to hdfile1.txt, delete file myfile.txt"
+git cofig --global uer.name "alanyaoy"
+git config --global uer.name "alanyaoy"
+git config --global user.email "alanyaoy555@gmail.com"
+git push
+git pull
+git push
+mode 80,100
+mode 120,70
+history
+doskey /history
+ls -la
+color help
+doskey /history >cmd.txt
+color 03
+color 02
+dir -all
+dir
+del test.tx
+del test.txt
+del text.txt
+file.txt
+del file.txt
+1.txt
+del .gitconfig
+del network_info.txt
+cd ..
+cd yaoa
+cd newgittest
+ls -la
+ls
+type notepadgit2.txt
+type notepadgit1.txt
+type myfile.txt
+git status
+git rm myfile.txt
+ls -la
+type code.txt
+type myhdfile.txt
+ls
+git mv notpadgit1.txt notepad_f1.txt
+git mv notepadgit1 notepad_f1.txt
+git mv NotepadGit1 notepad_f1.txt
+git mv NotepadGit1.txt Notepad_f1.txt
+ls
+git mv myhdfile.txt hdfile1.txt
+git status
+git add .
+ls
+git status
+--------------------------
+09/08/2018 15:15PM
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git diff
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ ^C
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ print "------------------------------------------"
+Can't find file ------------------------------------------
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ date/t
+bash: date/t: No such file or directory
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ date /t
+date: invalid date ‘/t’
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git --date
+unknown option: --date
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git date
+git: 'date' is not a git command. See 'git --help'.
+
+The most similar command is
+        update
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git date help
+git: 'date' is not a git command. See 'git --help'.
+
+The most similar command is
+        update
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git time/t
+git: 'time/t' is not a git command. See 'git --help'.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git time
+git: 'time' is not a git command. See 'git --help'.
+
+The most similar commands are
+        blame
+        stage
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git -h
+unknown option: -h
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ git ?date
+git: '?date' is not a git command. See 'git --help'.
+
+The most similar command is
+        update
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ time
+
+real    0m0.001s
+user    0m0.000s
+sys     0m0.000s
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ time /
+bash: /: Is a directory
+
+real    0m0.020s
+user    0m0.000s
+sys     0m0.000s
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ echo %time%
+%time%
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ date
+Thu, Aug  9, 2018  1:06:44 PM
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ date + "%Y-%m-%d %T"
+date: extra operand ‘%Y-%m-%d %T’
+Try 'date --help' for more information.
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ date +"%Y-%m-%d %T"
+2018-08-09 13:11:26
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ date +%Y_%m_%d__%H_%M_%S
+2018_08_09__13_18_40
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ echo %date:~10,4%-%date:~4,2%-%date:~7,2%,%time%
+%date:~10,4%-%date:~4,2%-%date:~7,2%,%time%
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$ '-------------------------------------------------------------------------------------------------------------------------------------------------'
+bash: -------------------------------------------------------------------------------------------------------------------------------------------------: command not found
+
+yaoa@RYDWS366 MINGW64 /c/users/yaoa/newgittest (master)
+$
